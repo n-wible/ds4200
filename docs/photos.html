@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photos | Nick W</title>
+
+  <!-- styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Photo projects and gallery by Nick Wible">
 </head>
 <body>
+  <div class="container">
 
+    <!-- nav -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="photos.html">Photos</a>
+    </nav>
+
+    <!-- approach -->
+    <div class="card">
+      <h2>Projects & Approach</h2>
+      <p>
+        For all of my shots, I try to focus on a good angle or scene, which is usually based on luck, timing, as well as
+        photo composition. I usually use the rule of 3rds, because it fits with my landscape-style the best, and it's easy.
+        Fun fact - none of these photos were actually taken by my A6000 or Sigma lens. They were all taken on the iPhone
+        14 Pro, mostly because I'm lazy to haul around my camera everywhere. Many of the best scenes I've been able to
+        witness and take pictures of have been the result of luck and timing. When I assess if a scene is worth photographing,
+        I try to see if there's any subject worth focusing on - in these cases, the Christian Science Complex, or the
+        Prudential Center, or a Sunset, and factoring in whether the background lighting or mood supports it. I primarily
+        prefer darker palettes and settings, over high-contrast bright ones.
+      </p>
+      <p>
+        To improve on my photography, I've recently invested in a new Sigma lens for landscaping, as well as trying to
+        take my camera when I go out. The photography I do is not for any story, and doesn't focus on any specific theme,
+        but instead I just want to capture a moment, that, in my eyes, is exceptional or connects with me on a deeper level.
+      </p>
+    </div>
+
+    <!-- Shooting list -->
+    <div class="card">
+      <h3>What I Shoot</h3>
+      <ul class="list">
+        <li>Sunrise/sunsets</li>
+        <li>Street photography with good lighting + shadow</li>
+        <li>Details: textures, reflections, and symmetry breaks</li>
+        <li>Night scenes with long exposure</li>
+        <li>Wildlife, if they sit still (doesn't happen often)</li>
+      </ul>
+    </div>
+
+    <!-- photo gallery -->
+    <div class="card">
+      <h3>Gallery</h3>
+      <div class="grid">
+        <div>
+          <img src="photos/cscmplx.jpg" alt="Christian Science Complex at Night">
+          <div class="caption">Christian Science Complex at Night - Boston, MA.</div>
+        </div>
+        <div>
+          <img src="photos/fall_prud.jpg" alt="Fall foliage from the Fens">
+          <div class="caption">Fall foliage on a foggy day, shot from Fens, of Prudential Center.</div>
+        </div>
+        <div>
+          <img src="photos/sunset1.jpg" alt="Crystal Cove Sunset">
+          <div class="caption">Late-summer sunset on the water, shot on Crystal Cove in SoCal.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      © <span id="year"></span> Nicholas Wible
+    </footer>
+  </div>
+
+  <!-- update year -->
+  <script>
+    const year = new Date().getFullYear();
+    document.getElementById('year').innerText = year;
+  </script>
 </body>
 </html>

@@ -1,10 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nick W | Photography</title>
+
+  <!-- style -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Nick Wible's personal photography site">
 </head>
 <body>
+  <div class="container">
 
+    <!-- nav -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="photos.html">Photos</a>
+    </nav>
+
+    <!-- main -->
+    <header class="card hero">
+      <h1>Nick's Photography Site</h1>
+      <p>
+        I’m Nick, a Data Science & Finance student at Northeastern. When I'm not studying or working, I usually relax
+        by either working on my car, or spending time in nature by hiking and doing photography. I shoot on an older
+        Sony A6000, with a Sigma 16mm f/1.4, or the 16-50mm and 55-210mm kit lenses. I only really like taking landscape
+        shots, and focus a lot on nature-related shots. Though I have a great camera, the majority of my shots are from
+        my iPhone 14 Pro, because I can't be hauling a camera everywhere.
+      </p>
+      <p>
+        Editing the photo is often more important than the original photo itself, and I use Adobe Lightroom because its
+        free from the University. I also love to travel, and the photos on my website are from a LA and Bos respectively.
+        In the past, I've lived and worked in South Florida (born & raised), Atlanta, Boston, and the Bay Area. I've also
+        had the opportunity to visit a few different areas, like upstate NY, NYC, upstate NH, LA/SoCal. A few special parks
+        I've visited also include the Salar de Uyuni, Grand Canyon, Muir Woods, Everglades/Big Cypress, and the
+        Mojave. Soon I hope to have the chance to visit Acadia.
+      </p>
+
+      <div class="card">
+        <img src="photos/sunset1.jpg" alt="Sunset at Crystal Cove">
+        <div class="caption">Late sunset at Crystal Cove, on Newport Beach, SoCal.</div>
+      </div>
+    </header>
+
+    <!-- contact-->
+    <section class="card contact">
+      <h2 id="contact">Contact</h2>
+      <p>LinkedIn, need to get connections to 500 haha</p>
+      <p>
+        <a class="link" href="https://www.linkedin.com/in/nicholas-wible/" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      © <span id="year"></span> Nick Wible — All photos ©
+    </footer>
+  </div>
+
+  <!-- year update-->
+  <script>
+    const year = new Date();
+    document.getElementById("year").innerText = year.getFullYear();
+  </script>
 </body>
 </html>
